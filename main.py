@@ -13,4 +13,4 @@ if __name__ == '__main__':
     usage: python main.py <port>
     """
     import sys
-    app.run(port=sys.argv[1])
+    app.run(port=int(sys.argv[1]))
