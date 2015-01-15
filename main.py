@@ -6,7 +6,7 @@ app = Flask('EchoServer')
 
 @app.route("/", methods=['GET', 'POST'])
 def echo():
-    return request.data
+    return str(request.data)
 
 if __name__ == '__main__':
     """
