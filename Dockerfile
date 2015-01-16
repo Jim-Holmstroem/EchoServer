@@ -1,5 +1,7 @@
 FROM python:2-onbuild
 
-CMD [ "python", "./main.py", "5000" ]
+ENV PORT 5000
+
+CMD python ./main.py $PORT
 
 EXPOSE 5000
