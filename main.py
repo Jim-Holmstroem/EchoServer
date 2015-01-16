@@ -4,9 +4,9 @@ from flask import Flask, request
 app = Flask('EchoServer')
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['POST', ])
 def echo():
-    return str(request.data)
+    return request.get_data()
 
 if __name__ == '__main__':
     """
